@@ -42,6 +42,10 @@ p {
     color: #fff;
 }
 
+.portfolio-section p {
+    color: black;
+}
+
 /* social media */
 .fa {
     padding: 20px;

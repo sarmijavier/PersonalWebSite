@@ -5,5 +5,49 @@
 {% endblock%}
 
 {% block content %}
-<h1 style="color: #fff;">Comming soon!!!</h1>
+    <main class="portfolio-section">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col">
+                    <div class="card" style="width: 18rem; color: #0f4c75;">
+                        <img src="{{ url_for('static', filename='images/learn.png')}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Learn to recycle</h5>
+                          <p class="card-text">
+                              This project is about how we can help the people to recycle. it's made with code from kaggle,
+                              and we implemented it in a flask application.
+                          </p>
+                          <a href="https://github.com/sarmijavier/LearnToRecycle" class="btn btn-dark">See more</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{{ url_for('static', filename='images/fitbit.jpeg')}}" class="card-img-top" alt="fitbit watch">
+                        <div class="card-body">
+                          <h5 class="card-title">Fitbit app</h5>
+                          <p class="card-text">
+                              This project has made with fitbit SDK, the purpose of this project is capture data from 
+                                sensors, and this data is stored each 5 minutes.
+                          </p>
+                          <a href="https://github.com/sarmijavier/fitbit_app" class="btn btn-dark">see more</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{{ url_for('static', filename='images/recytech.png')}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Recytech</h5>
+                          <p class="card-text">
+                            This project was made with express framework. the goal is attack different recycle problematics, in specific the electronic garbage
+                            in the Engativa Localidad in Bogotá.
+                          </p>
+                          <a href="https://github.com/sarmijavier/Recytech_mongoDB" class="btn btn-dark">see more</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </main>
 {% endblock %}
