@@ -1,6 +1,12 @@
 {% extends 'base.html' %}
+
+
 {% block title %}
     WhoAmI
+{% endblock%}
+
+{% block head %}
+    {{ super() }}
 {% endblock%}
 
 {% block content %}
@@ -8,13 +14,12 @@
     <div class="container">
         <div class="row mt-5 mb-5">
             <div class="col-lg-6 col-sm-12">
-                <figure class="main-photo">
+                <figure class="main-photo" style="max-width: 100%;">
                     <img src="https://images.pexels.com/photos/247819/pexels-photo-247819.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Now or Never">
                 </figure>
             </div>
             <div class="col-lg-6 col-sm-12">
                 <h2 >Never Stop learning</h2>
-
                 <p>
                     Hi!, I'm a system engineering and computing student, but it doesn't matter. I love technology and 
                     science. In the university and at Plazi, I've developed differente skills and personal projects. Where 
