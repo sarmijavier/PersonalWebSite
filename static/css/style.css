@@ -1,0 +1,14 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#main .carousel .carousel-inner img {
+    max-height: 92vh;
+    object-fit: cover;
+    filter: grayscale(70%);
+}
+
+.hgf {
+    background-color: tomato;
+    color: teal;
+}
