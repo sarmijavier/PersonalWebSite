@@ -2,13 +2,72 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+
+body {
+    background-color: #1b1c25;
+}
+
+
 #main .carousel .carousel-inner img {
     max-height: 92vh;
     object-fit: cover;
     filter: grayscale(70%);
 }
 
-.hgf {
-    background-color: tomato;
-    color: teal;
+
+footer h4 {
+    color: #fff;
+}
+
+#social-media button {
+    max-width: 80px;
+    max-height: 50px;
+}
+
+
+.main-photo img {
+    max-width: 100%;
+}
+
+#twitter-button {
+    padding: 10px;
+}
+
+.main-whoami h2,
+p {
+    color: #fff;
+}
+
+#signature {
+    color: #fff;
+}
+
+/* social media */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+.fa-github {
+    background: #24292e;
+    color: white;
 }

@@ -1,12 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <H1>HOLAAAAAAAAAAAAA</H1>
-    
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block title %}
+    WhoAmI
+{% endblock %}
+
+
+{% block content %}
+<main class="main-whoami">
+    <div class="container">
+        <div class="row mt-5 mb-5">
+            <div class="col-lg-6 col-sm-12">
+                <figure class="main-photo";">
+                    <img src="https://images.pexels.com/photos/247819/pexels-photo-247819.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Now or Never">
+                </figure>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <h2 >Never Stop learning</h2>
+                <p>
+                    Hi!, I'm a system engineering and computing student, but it doesn't matter. I love technology and 
+                    science. In the university and at Plazi, I've developed differente skills and personal projects. Where 
+                    I've improved as a person and professional. I want to start with you, I always learn something new. 
+                </p>
+            </div>
+        </div>
+        <div  id="signature" class="row-12 text-center ">
+            <h1 >How can I help you ?</h1>
+        </div>
+    </div>
+</main>
+{% endblock%}
