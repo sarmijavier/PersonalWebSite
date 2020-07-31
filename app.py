@@ -4,6 +4,11 @@ from flask_bootstrap import Bootstrap
 app = Flask(__name__, template_folder='templates', static_folder='static')
 bootstrap = Bootstrap(app)
 
+@app.errorhandler(404)
+def not_found(error):
+    return render_template('404.html', error=error)
+
+
 @app.route('/')
 def hello_world():
     return render_template('presentation.html')
