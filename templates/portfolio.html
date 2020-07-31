@@ -7,9 +7,14 @@
 {% block content %}
     <main class="portfolio-section">
         <div class="container ">
+          <div class="col text-center">
+            <h3 style="color: #fff;">
+              Some of my projects
+            </h3>
+          </div>
             <div class="row mt-5 text-center">
                 <div class="col-lg-4 col-md-4 col-sm-12 ">
-                    <div class="card" style="width: 18rem; color: #0f4c75;">
+                    <div class="card">
                         <img src="{{ url_for('static', filename='images/learn.png')}}" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Learn to recycle</h5>
@@ -22,7 +27,7 @@
                       </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card">
                         <img src="{{ url_for('static', filename='images/fitbit.jpeg')}}" class="card-img-top" alt="fitbit watch">
                         <div class="card-body">
                           <h5 class="card-title">Fitbit app</h5>
@@ -35,7 +40,7 @@
                       </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card">
                         <img src="{{ url_for('static', filename='images/recytech.png')}}" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Recytech</h5>
