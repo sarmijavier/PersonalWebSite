@@ -6,19 +6,25 @@
             <h4 class="text-center" >Contact Us</h4>
         </div>
         <div class="row mr-2 text-center">
-            <div class="col-lg-3 ">
+            <div class="col-lg-6 ">
+                <h4>Social Media</h4>
                 <a href="https://twitter.com/SarmiJavier" target="_blank"  class="fa fa-twitter"></a>
-                
-            </div>
-            <div class="col-lg-3 ">
+                <a href="https://www.instagram.com/sarmijavier/" target="_blank" class="fa fa-instagram"></a>       
                 <a href="https://www.linkedin.com/in/h-javier-sarmiento-y-28085a19a/"  target="_blank" class="fa fa-linkedin"></a>
+                <a href="https://github.com/sarmijavier" target="_blank" class="fa fa-github"></a>
 
             </div>
-            <div class="col-lg-3 ">
-                <a href="https://www.instagram.com/sarmijavier/" target="_blank" class="fa fa-instagram"></a>       
+            <div id=contact class="col-lg-4">
+                <form action="/contact" method="post">
+                    <dl>
+                        {{ contact_form.csrf_token }}
+                        {{ wtf.form_field(contact_form.email)}}
+                        {{ wtf.form_field(contact_form.message)}}
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </dl>
+                </form>
             </div>
-            <div class="col-lg-3 ">
-                <a href="https://github.com/sarmijavier" target="_blank" class="fa fa-github"></a>
+            <div class="col-lg-2 text-center">
 
             </div>
         </div>

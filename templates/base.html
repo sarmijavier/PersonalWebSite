@@ -1,10 +1,13 @@
 {% extends 'bootstrap/base.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
 
 {% block head %}
     {{ super() }}
     <title>
         {% block title %} YAHUARCANI {% endblock %}
     </title>
+        <link rel="icon" href="{{ url_for('static', filename='images/logo.png' )}}" type="image/png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 {% endblock %}
@@ -13,12 +16,18 @@
     {% block navbar %}
         {% include 'navbar.html' %}
     {% endblock%}
+    {% for message in get_flashed_messages() %}
+        <div class="alert alert-success alert-dismissible">
+            <button type="button" data-dismiss="alert" class="close">&times;</button>
+            {{ message }}
+        </div>
+    {% endfor %}
     {% block content %}
     {% endblock %}
     {% block scripts %}
         {{ super() }}
     {% endblock %}
-    {% block footer%}
-        {% include 'footer.html'%}
-    {% endblock%}
+    {% block footer %}
+        {% include 'footer.html' %}
+    {% endblock %}
 {% endblock%}

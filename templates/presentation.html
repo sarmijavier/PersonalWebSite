@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
 
 
-{% block title%}
+{% block title %}
     YAHUARCANI
-{% endblock%}
+{% endblock %}
 
 {% block content %}
 <!-- main -->
@@ -19,7 +19,7 @@
                 <div class="carousel-item active">
                     <img src="{{ url_for('static', filename='images/main.jpg')}}"  class="d-block w-100" alt="...">
                     <div class="carousel-caption d-md-block">
-                        <h5>Hi!, Welcome to my website </h5>
+                        <h5><a href="{{ url_for('whoami')}}">Who am i ?</a></h5>
                         <p> tell me, How can I help you ?</p>
                     </div>
                 </div>
