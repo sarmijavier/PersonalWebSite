@@ -64,6 +64,11 @@ def never():
     return render_template('neverStopLearning.html')
 
 
+@app.route('/bogota')
+def bogota():
+    return render_template('bogota.html')
+
+
 @app.route('/contact', methods=['GET','POST'])
 def contact():
 

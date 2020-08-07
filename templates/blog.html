@@ -5,15 +5,28 @@
 
 {% block content %}
 <div class="container">
-    <div class="row-lg-12">
+
+    <div class="row-lg-12 mt-5">
         <div class="card ">
-            <h5 class="card-header">Topic : inspiration</h5>
+            <h5 class="card-header" style="background: #125688; color: #fff;" >Topic : inspiration</h5>
             <div class="card-body">
               <h5 class="card-title">Title : Never stop learning</h5>
               <p class="card-text" style="color: black;">
                   Here, I'm going to talk about my experience and how Platzi changes my life
               </p>
-              <a href="{{ url_for('never')}}" class="btn btn-primary">keep reading</a>
+              <a href="{{ url_for('never')}}" class="btn btn-primary" style="background: #125688;">keep reading</a>
+            </div>
+          </div>
+    </div>
+    <div class="row-lg-12 mt-5">
+        <div class="card ">
+            <h5 class="card-header" style="background: #125688; color: #fff;" >Topic : Bogotá</h5>
+            <div class="card-body">
+              <h5 class="card-title">Title : Bogotá, the city of everybody</h5>
+              <p class="card-text" style="color: black;">
+                  "Today Bogotá is 482 years old", but I'm going to talk about Bogotá and some of its interesting aspects.
+              </p>
+              <a href="{{ url_for('bogota')}}" class="btn btn-primary" style="background: #125688;">keep reading</a>
             </div>
           </div>
     </div>
