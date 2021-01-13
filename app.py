@@ -4,7 +4,6 @@ from flask_wtf import FlaskForm
 from wtforms.fields import StringField, PasswordField, SubmitField, TextAreaField
 from wtforms.validators import DataRequired
 from wtforms.fields.html5 import EmailField
-import pyrebase
 import os
 
 app = Flask(__name__, template_folder='templates', static_folder='static')
@@ -12,17 +11,6 @@ bootstrap = Bootstrap(app)
 SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY']= SECRET_KEY
 
-firebaseConfig = {
-  "apiKey": "AIzaSyDwM0tnkHrJNwWU6ETFSQVzE9h4lrRqNxw",
-  "authDomain": "messageswebsite-4130e.firebaseapp.com",
-  "databaseURL": "https://messageswebsite-4130e.firebaseio.com",
-  "projectId": "messageswebsite-4130e",
-  "storageBucket": "messageswebsite-4130e.appspot.com",
-  "messagingSenderId": "572331620753",
-  "appId": "1:572331620753:web:addd03690fda0d335ec230"
-}
-
-firebase = pyrebase.initialize_app(firebaseConfig)
 
 class ContactForm(FlaskForm):
     email = EmailField('Email', validators=[DataRequired()])
